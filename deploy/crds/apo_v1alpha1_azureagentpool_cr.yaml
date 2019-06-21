@@ -1,0 +1,7 @@
+apiVersion: apo.azurepipelineoperator.github.com/v1alpha1
+kind: AzureAgentPool
+metadata:
+  name: example-azureagentpool
+spec:
+  # Add fields here
+  size: 3
