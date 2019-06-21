@@ -67,7 +67,33 @@ func schema_pkg_apis_apo_v1alpha1_AzureAgentPoolSpec(ref common.ReferenceCallbac
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
 				Description: "AzureAgentPoolSpec defines the desired state of AzureAgentPool",
-				Properties:  map[string]spec.Schema{},
+				Properties: map[string]spec.Schema{
+					"account": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+					"project": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+					"accessToken": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+					"agentPool": {
+						SchemaProps: spec.SchemaProps{
+							Type:   []string{"string"},
+							Format: "",
+						},
+					},
+				},
+				Required: []string{"account", "project", "accessToken", "agentPool"},
 			},
 		},
 		Dependencies: []string{},

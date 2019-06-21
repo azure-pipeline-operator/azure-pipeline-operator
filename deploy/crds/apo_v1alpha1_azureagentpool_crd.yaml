@@ -28,6 +28,20 @@ spec:
         metadata:
           type: object
         spec:
+          properties:
+            accessToken:
+              type: string
+            account:
+              type: string
+            agentPool:
+              type: string
+            project:
+              type: string
+          required:
+          - account
+          - project
+          - accessToken
+          - agentPool
           type: object
         status:
           type: object
